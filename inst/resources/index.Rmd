@@ -1,7 +1,5 @@
 ---
-title: "<<PROJECT_NAME>>"
 site: bookdown::bookdown_site
-author: "<<AUTHOR_NAME>>"
 output:
   bookdown::word_document2:
       reference_docx: # Reference formatting
@@ -17,7 +15,7 @@ invisible( list2env( yml_vars, envir=globalenv() ) )
 
 ```
 
-```{r title_page}
+```{r}
 
 knitr::include_graphics( path = REPORT.BANNER.IMG )
 
@@ -26,15 +24,18 @@ knitr::include_graphics( path = REPORT.BANNER.IMG )
 
 # `r REPORT.NAME`
 
-This `r REPORT.TYPE` report is part of the `r PROJECT.NAME` project.
+This **`r REPORT.TYPE`** report is part of the **`r PROJECT.NAME`** project.
 
 ```{r}
 
-ifelse( REPORT.DESCRIPTION=="",
+description_text = ifelse( REPORT.DESCRIPTION=="",
         "*The report description is missing, please add details to the settings.yml file*",
         REPORT.DESCRIPTION )
 
 ```
+
+`r description_text`
+
 
 |                    |                                         |
 | ------------------ | --------------------------------------- |
