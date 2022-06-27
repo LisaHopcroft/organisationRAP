@@ -4,8 +4,9 @@ language:
 delete_merged_file: true
 rmd_files: [
   "index.Rmd",
-  "00_data-input.Rmd",
-  "01_data-clean.Rmd",
-  "10_analysis.Rmd",
-  "20_interpretation.Rmd",
+  "00_introduction.Rmd",
+  "11_data-input.Rmd",
+  "12_data-clean.Rmd",
+  "20_analysis.Rmd",
+  "30_interpretation.Rmd",
   ]
