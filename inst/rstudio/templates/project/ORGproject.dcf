@@ -20,4 +20,4 @@ Label: Author email
 Parameter: author_organisation
 Widget: TextInput
 Label: Author organisation
-Default: DORG organisation
+Default: ORG organisation
