@@ -1,0 +1,51 @@
+---
+title: "<<PROJECT_NAME>>"
+site: bookdown::bookdown_site
+author: "<<AUTHOR_NAME>>"
+output:
+  bookdown::word_document2:
+      reference_docx: # Reference formatting
+---
+
+```{r, results='hide', message=FALSE, warning=FALSE, echo=FALSE}
+library( yaml )
+library( magrittr )
+
+yml.file = "settings.yml"
+yml_vars = yaml::read_yaml( yml.file ) %>% unlist %>% as.list
+invisible( list2env( yml_vars, envir=globalenv() ) )
+
+```
+
+```{r title_page}
+
+knitr::include_graphics( path = REPORT.BANNER.IMG )
+
+```
+
+
+# `r REPORT.NAME`
+
+This `r REPORT.TYPE` report is part of the `r PROJECT.NAME` project.
+
+```{r}
+
+ifelse( REPORT.DESCRIPTION=="",
+        "*The report description is missing, please add details to the settings.yml file*",
+        REPORT.DESCRIPTION )
+
+```
+
+|                    |                                         |
+| ------------------ | --------------------------------------- |
+| *Report version*     | `r REPORT.VERSION`                      |
+| *Report Date*        | `r format(today(),format="%d %B %Y")`   |
+
+
+**Author contact details**
+
+|               |                 |
+| ------------- | --------------- |
+| Name          | `r REPORT.AUTHOR.NAME`   |
+| Affiliation   | `r REPORT.AUTHOR.ORGANISATION`   |
+| Email address | `r REPORT.AUTHOR.EMAIL` |

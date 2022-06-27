@@ -1,0 +1,7 @@
+#ß# Interpretation
+
+_In this section, discuss the output of the analysis and provide interpretation._
+
+```{r}
+
+```
