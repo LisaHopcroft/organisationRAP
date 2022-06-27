@@ -1,0 +1,19 @@
+### ============== ###
+### REPORT DETAILS ###
+### ============== ###
+
+PROJECT:
+  NAME: "<<PROJECT_NAME>>"
+
+REPORT:
+  NAME: "<<REPORT_NAME>>"
+  AUTHOR:
+    NAME: "<<AUTHOR_NAME>>"
+    EMAIL: "<<AUTHOR_EMAIL>>"
+    ORGANISATION: "<<AUTHOR_ORGANISATION>>"
+    PHONE: ""
+  DESCRIPTION: ""
+  TYPE: "preliminary"
+  VERSION: "v0.5" # Report version
+  BANNER:
+    IMG: "img/demo_banner.png" # Image to be used as banner

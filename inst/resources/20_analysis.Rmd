@@ -1,0 +1,7 @@
+## Data analysis
+ 
+_In this section, please implement any analyses. If additional cleaning needs to be carried out, ensure that this is added to the data cleaning section, NOT the analysis section._
+
+```{r}
+
+```

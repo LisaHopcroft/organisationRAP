@@ -1,0 +1,14 @@
+## Data cleaning
+
+_In this section, please implement any data cleaning techniques. Ensure that these run end-to-end without any manual intervension._
+
+_Rather than use mappings embedded in the code, add them in a separate text or csv file and read them in from there (this will make it easier to update later._
+
+_Document the following:_
+
+- _where any mappings came from_
+- _justification of any cleansing techniques (e.g. identification of outliers, removal of records with critical data missing)_
+
+```{r}
+
+```

@@ -1,0 +1,23 @@
+Binding: ORGproject
+Title: ORG organisation RAP
+
+Parameter: project_name
+Widget: TextInput
+Label: Project title
+
+Parameter: report_name
+Widget: TextInput
+Label: Report name
+
+Parameter: author_name
+Widget: TextInput
+Label: Author name
+
+Parameter: author_email
+Widget: TextInput
+Label: Author email
+
+Parameter: author_organisation
+Widget: TextInput
+Label: Author organisation
+Default: ORG organisation

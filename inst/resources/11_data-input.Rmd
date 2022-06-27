@@ -1,0 +1,16 @@
+## Data input
+
+_In this section, please describe the following:_
+
+- _where each data source came from_
+- _the file type of each datasource_
+- _the size of each datasource_
+- _an md5sum for each datasource_
+- _the date on which the data were extracted/generated_
+- _the location of any data dictionaries_
+- _any additional information regarding keys/data dictionaries etc_
+
+
+```{r}
+
+```
