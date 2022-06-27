@@ -1,4 +1,4 @@
-#ß# Interpretation
+## Interpretation
 
 _In this section, discuss the output of the analysis and provide interpretation._
 

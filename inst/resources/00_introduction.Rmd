@@ -2,7 +2,9 @@
 
 _In this section provide some background about the project, including:_
 
-_- when it began_
-_- how it is funded_
-_- key stakeholders_
-_- main objectives_
+- _when it began_
+- _how it is funded_
+- _key stakeholders_
+- _main objectives_
+- _etc..._
+
