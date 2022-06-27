@@ -1,0 +1,10 @@
+Package: organisationRAP
+Type: Package
+Title: Helps Analysts at ORG Organisation USE RAP
+Version: 0.1.0
+Author: Lisa Hopcroft
+Maintainer: The package maintainer <me@somewhere.net>
+Description: "Creates all the files necessary for the RAP, using the default templates, via File > New Project ... > New Directory > XX"
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
