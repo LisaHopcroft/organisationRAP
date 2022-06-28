@@ -1,0 +1,6 @@
+Binding: TestProject
+Title: A test RAP
+
+Parameter: name
+Widget: TextInput
+Label: Project name
