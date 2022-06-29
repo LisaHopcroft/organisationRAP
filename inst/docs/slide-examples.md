@@ -75,7 +75,7 @@ style: |
 - Becoming more common in civil service and government organisations
     - [UK government blog](https://dataingovernment.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/)
     - [Government Statistical Service](https://gss.civilservice.gov.uk/reproducible-analytical-pipelines)
-    - [Office for National Statistics](https://datasciencecampus.ons.gov.uk/capability/data-science-campus-faculty/reproducible-analytical-pipeline-journey/)
+    - [Office for National Statistics](https://datasciencecampus.ons.gov.uk/capability/data-science-campus-faculty/reproducible-analytical-pipeline-journey/) (includes links to courses on RAP subjects)
 
 ---
 
