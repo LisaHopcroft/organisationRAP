@@ -37,7 +37,8 @@ style: |
     - Make collaboration easy
     - Automate tasks with code where possible
     - Use coders' best practice
-- Our [manifesto](https://docs.opensafely.org/open-data-manifesto/) is a good start for understanding how to do open science
+- [OpenSAFELY](https://www.opensafely.org/about/): software platform for the analysis of electronic health record data
+- See our [manifesto](https://docs.opensafely.org/open-data-manifesto/) for a good introduction to the principles of open science
 
 ---
 
@@ -45,9 +46,9 @@ style: |
 
 - Clinical Trials Statistician at [Scottish Clinical Trials Research Unit](https://beta.isdscotland.org/products-and-services/scottish-clinical-trials-research-unit-sctru/)
 - Inspections are carried out by regulatory bodies
-    - clear guidance on administration and record keeping
+    - clear guidance on trial administration and record keeping
     - strong emphasis on audit trails and accountability
-    - BUT no guidance on what is required for statistical work
+    - *BUT* no guidance on what is required for statistical work
 
 - Legacy system: SPSS + copy/paste to Word
 * :scream: :scream: :scream:
@@ -58,7 +59,7 @@ style: |
 
 - Trial reports can be **very** long
 - No regulatory guidance, so needed to document E V E R Y T H I N G
-- Wanted to:
+* Wanted to:
     - eliminate rerun anxiety
     - prioritise flexibility (because: analysis methodology changes)
     - maintain a methodology history (because: analysis methodology changes)
@@ -167,7 +168,9 @@ Explore my [CTutils package](https://github.com/LisaHopcroft/CTutils) for more i
 
 # Summary
 
-- Spend time developing a robust RAP
-* Use `git` (properly)
+- Spend time developing a robust RAP (it is worth it)
+* Use `git` *properly* (i.e., branches, code review, issues, ...)
 * Are you are copying and pasting? :loudspeaker: **YOU'RE DOING IT WRONG**.
 * Document, document, document. If not for someone else, do it for your future self.
+* Testing :test_tube:
+* Consider `renv` for package management
