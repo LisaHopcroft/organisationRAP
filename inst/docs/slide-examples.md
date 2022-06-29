@@ -37,7 +37,8 @@ style: |
     - Make collaboration easy
     - Automate tasks with code where possible
     - Use coders' best practice
-- [Our manifesto](https://docs.opensafely.org/open-data-manifesto/) is a good start for understanding open science
+- [OpenSAFELY](https://www.opensafely.org/about/): software platform for the analysis of electronic health record data
+- See our [manifesto](https://docs.opensafely.org/open-data-manifesto/) for a good introduction to the principles of open science
 
 ---
 
@@ -45,9 +46,9 @@ style: |
 
 - Clinical Trials Statistician at [Scottish Clinical Trials Research Unit](https://beta.isdscotland.org/products-and-services/scottish-clinical-trials-research-unit-sctru/)
 - Inspections are carried out by regulatory bodies
-    - clear guidance on administration and record keeping
+    - clear guidance on trial administration and record keeping
     - strong emphasis on audit trails and accountability
-    - BUT no guidance on what is required for statistical work
+    - *BUT* no guidance on what is required for statistical work
 
 - Legacy system: SPSS + copy/paste to Word
 * :scream: :scream: :scream:
@@ -57,8 +58,8 @@ style: |
 # Motivations
 
 - Trial reports can be **very** long
-- Needed to document E V E R Y T H I N G
-- Wanted to:
+- No regulatory guidance, so needed to document E V E R Y T H I N G
+* Wanted to:
     - eliminate rerun anxiety
     - prioritise flexibility (because: analysis methodology changes)
     - maintain a methodology history (because: analysis methodology changes)
@@ -86,16 +87,16 @@ style: |
     1. Build function for project
     1. Configuration of GUI interface between (i) and (ii)
 
-![width:350px topright](inst/img/process.png)
+![width:350px topright](../img/process.png)
 
 ---
 
 ## Component (i) Document templates/media
 
-- `inst/` directory ([more information here](https://r-pkgs.org/inst.html))
-- `inst/resources` 
+- Makes use of an R package's `inst/` directory ([more information here](https://r-pkgs.org/inst.html))
+- Save a template pipeline directory here (e.g., `inst/resources`)
 
-![width:450px bottomcentre](inst/img/inst-contents.png)
+![width:450px bottomcentre](../img/inst-contents.png)
 
 
 ---
@@ -114,12 +115,12 @@ style: |
         dir.create(...) # e.g., dat/ log/
 
         ### copy the template files - .Rmd, .R etc.
-        template_files = c()
-        for ( t in template_files ) { file.copy(t, file.path(path)) }
+        # template_files = c()
+        # for ( t in template_files ) { file.copy(t, file.path(path)) }
 
         ### copy directories files and contents - img/
-        template_directories = c()
-        for ( t in template_files ) { file.copy(t, file.path(path)) }
+        # for ( t in template_files ) { file.copy(t, file.path(path)) }
+        # template_directories = c()
     }    
     ```
 
@@ -144,13 +145,13 @@ style: |
 
 # What does this allow you to do?
 
-![leftcolumn](inst/img/project-wizard-0.png)
+![leftcolumn](../img/project-wizard-0.png)
 
 ---
 
 # What does this allow you to do?
 
-![leftcolumn](inst/img/project-wizard-0.png) ![rightcolumn](inst/img/project-wizard-1.png)
+![leftcolumn](../img/project-wizard-0.png) ![rightcolumn](../img/project-wizard-1.png)
 
 ---
 
@@ -161,11 +162,15 @@ Including a little bit of:
 - `bookdown` and `markdown`
 - yaml tools
 
+Explore my [CTutils package](https://github.com/LisaHopcroft/CTutils) for more information.
+
 ---
 
 # Summary
 
-- Spend time developing a robust RAP
-- Use `git`
-- Are you are copying and pasting? :loudspeaker: **YOU'RE DOING IT WRONG**.
-- Document, document, document. If not for someone else, do it for your future self.
+- Spend time developing a robust RAP (it is worth it)
+* Use `git` *properly* (i.e., branches + PRs, code review, issues, ...)
+* Are you are copying and pasting? :loudspeaker: **YOU'RE DOING IT WRONG**
+* Document, document, document (`roxygen2`)
+* Testing :test_tube:
+* Consider `renv` for package management

@@ -100,7 +100,8 @@ img[alt~=&quot;rightcolumn&quot;] {
 <li>Use coders' best practice</li>
 </ul>
 </li>
-<li><a href="https://docs.opensafely.org/open-data-manifesto/">Our manifesto</a> is a good start for understanding open science</li>
+<li><a href="https://www.opensafely.org/about/">OpenSAFELY</a>: software platform for the analysis of electronic health record data</li>
+<li>See our <a href="https://docs.opensafely.org/open-data-manifesto/">manifesto</a> for a good introduction to the principles of open science</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-marpit-fragments="1" data-style="img[alt~=&quot;topright&quot;] {
@@ -150,9 +151,9 @@ img[alt~=&quot;rightcolumn&quot;] {
 <li>
 <p>Inspections are carried out by regulatory bodies</p>
 <ul>
-<li>clear guidance on administration and record keeping</li>
+<li>clear guidance on trial administration and record keeping</li>
 <li>strong emphasis on audit trails and accountability</li>
-<li>BUT no guidance on what is required for statistical work</li>
+<li><em>BUT</em> no guidance on what is required for statistical work</li>
 </ul>
 </li>
 <li>
@@ -163,7 +164,7 @@ img[alt~=&quot;rightcolumn&quot;] {
 <li data-marpit-fragment="1"><img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f631.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f631.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f631.svg" data-marp-twemoji=""/></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-style="img[alt~=&quot;topright&quot;] {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="1" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
     top: 100px;
     right: 100px;
@@ -205,8 +206,10 @@ img[alt~=&quot;rightcolumn&quot;] {
 <h1>Motivations</h1>
 <ul>
 <li>Trial reports can be <strong>very</strong> long</li>
-<li>Needed to document E V E R Y T H I N G</li>
-<li>Wanted to:
+<li>No regulatory guidance, so needed to document E V E R Y T H I N G</li>
+</ul>
+<ul>
+<li data-marpit-fragment="1">Wanted to:
 <ul>
 <li>eliminate rerun anxiety</li>
 <li>prioritise flexibility (because: analysis methodology changes)</li>
@@ -319,7 +322,7 @@ img[alt~=&quot;rightcolumn&quot;] {
 </ol>
 </li>
 </ul>
-<p><img src="inst/img/process.png" alt="topright" style="width:350px;" /></p>
+<p><img src="../img/process.png" alt="topright" style="width:350px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
@@ -362,10 +365,10 @@ img[alt~=&quot;rightcolumn&quot;] {
 ;">
 <h2>Component (i) Document templates/media</h2>
 <ul>
-<li><code>inst/</code> directory (<a href="https://r-pkgs.org/inst.html">more information here</a>)</li>
-<li><code>inst/resources</code></li>
+<li>Makes use of an R package's <code>inst/</code> directory (<a href="https://r-pkgs.org/inst.html">more information here</a>)</li>
+<li>Save a template pipeline directory here (e.g., <code>inst/resources</code>)</li>
 </ul>
-<p><img src="inst/img/inst-contents.png" alt="bottomcentre" style="width:450px;" /></p>
+<p><img src="../img/inst-contents.png" alt="bottomcentre" style="width:450px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
@@ -419,12 +422,12 @@ img[alt~=&quot;rightcolumn&quot;] {
     dir.create(...) <span class="hljs-comment"># e.g., dat/ log/</span>
 
     <span class="hljs-comment">### copy the template files - .Rmd, .R etc.</span>
-    template_files = <span class="hljs-built_in">c</span>()
-    <span class="hljs-keyword">for</span> ( t <span class="hljs-keyword">in</span> template_files ) { file.copy(t, file.path(path)) }
+    <span class="hljs-comment"># template_files = c()</span>
+    <span class="hljs-comment"># for ( t in template_files ) { file.copy(t, file.path(path)) }</span>
 
     <span class="hljs-comment">### copy directories files and contents - img/</span>
-    template_directories = <span class="hljs-built_in">c</span>()
-    <span class="hljs-keyword">for</span> ( t <span class="hljs-keyword">in</span> template_files ) { file.copy(t, file.path(path)) }
+    <span class="hljs-comment"># for ( t in template_files ) { file.copy(t, file.path(path)) }</span>
+    <span class="hljs-comment"># template_directories = c()</span>
 }    
 </span></span></foreignObject></svg></code></pre>
 </li>
@@ -523,7 +526,7 @@ img[alt~=&quot;rightcolumn&quot;] {
 }
 ;">
 <h1>What does this allow you to do?</h1>
-<p><img src="inst/img/project-wizard-0.png" alt="leftcolumn" /></p>
+<p><img src="../img/project-wizard-0.png" alt="leftcolumn" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
@@ -565,7 +568,7 @@ img[alt~=&quot;rightcolumn&quot;] {
 }
 ;">
 <h1>What does this allow you to do?</h1>
-<p><img src="inst/img/project-wizard-0.png" alt="leftcolumn" /> <img src="inst/img/project-wizard-1.png" alt="rightcolumn" /></p>
+<p><img src="../img/project-wizard-0.png" alt="leftcolumn" /> <img src="../img/project-wizard-1.png" alt="rightcolumn" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
@@ -613,8 +616,9 @@ img[alt~=&quot;rightcolumn&quot;] {
 <li><code>bookdown</code> and <code>markdown</code></li>
 <li>yaml tools</li>
 </ul>
+<p>Explore my <a href="https://github.com/LisaHopcroft/CTutils">CTutils package</a> for more information.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-style="img[alt~=&quot;topright&quot;] {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-marpit-fragments="5" data-style="img[alt~=&quot;topright&quot;] {
     position: absolute;
     top: 100px;
     right: 100px;
@@ -655,10 +659,14 @@ img[alt~=&quot;rightcolumn&quot;] {
 ;">
 <h1>Summary</h1>
 <ul>
-<li>Spend time developing a robust RAP</li>
-<li>Use <code>git</code></li>
-<li>Are you are copying and pasting? <img class="emoji" draggable="false" alt="📢" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f4e2.svg" data-marp-twemoji=""/> <strong>YOU'RE DOING IT WRONG</strong>.</li>
-<li>Document, document, document. If not for someone else, do it for your future self.</li>
+<li>Spend time developing a robust RAP (it is worth it)</li>
+</ul>
+<ul>
+<li data-marpit-fragment="1">Use <code>git</code> <em>properly</em> (i.e., branches + PRs, code review, issues, ...)</li>
+<li data-marpit-fragment="2">Are you are copying and pasting? <img class="emoji" draggable="false" alt="📢" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f4e2.svg" data-marp-twemoji=""/> <strong>YOU'RE DOING IT WRONG</strong>.</li>
+<li data-marpit-fragment="3">Document, document, document (<code>roxygen2</code>)</li>
+<li data-marpit-fragment="4">Testing <img class="emoji" draggable="false" alt="🧪" src="https://twemoji.maxcdn.com/v/14.0.2/svg/1f9ea.svg" data-marp-twemoji=""/></li>
+<li data-marpit-fragment="5">Consider <code>renv</code> for package management</li>
 </ul>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:f}=t.children;for(let r=0;r<f;r+=1){const o=t.children[r];if(o.getScreenCTM){const t=o.getScreenCTM();if(t){const r=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,a=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.children.length;for(let e=0;e<l;e+=1){const n=o.children[e];if("SECTION"===n.tagName){const{style:e}=n;e.transformOrigin||(e.transformOrigin=`${-r}px ${-a}px`),e.transform=`scale(${c}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-d.left}, ${t.f-d.top}) translateZ(0.0001px)`;break}}}}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),f=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",f)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
