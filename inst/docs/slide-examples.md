@@ -169,8 +169,8 @@ Explore my [CTutils package](https://github.com/LisaHopcroft/CTutils) for more i
 # Summary
 
 - Spend time developing a robust RAP (it is worth it)
-* Use `git` *properly* (i.e., branches, code review, issues, ...)
-* Are you are copying and pasting? :loudspeaker: **YOU'RE DOING IT WRONG**.
-* Document, document, document. If not for someone else, do it for your future self.
+* Use `git` *properly* (i.e., branches + PRs, code review, issues, ...)
+* Are you are copying and pasting? :loudspeaker: **YOU'RE DOING IT WRONG**
+* Document, document, document (`roxygen2`)
 * Testing :test_tube:
 * Consider `renv` for package management
